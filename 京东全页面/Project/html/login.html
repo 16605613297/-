@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="../csscd/reset.css">
+    <link rel="stylesheet" href="../csscd/login.css">
+    <script src="../jscd/jquery1.11.js"></script>
+</head>
+<script>
+    $(function() {
+        $(".method>a").click(function() {
+            $(this).css({
+                "color": "red"
+            })
+            $(this).siblings().css({
+                "color": ""
+            })
+            var index = $(this).index()
+            console.log(index)
+            $(".die>div").eq(index).show()
+            $(".die>div").eq(index).siblings().hide()
+        })
+    })
+</script>
+
+<body>
+    <!-- header -->
+    <div class="header_wrap">
+        <header>
+            <img src="../images/logo.jpg" alt="京东" width="170px" height="60px">
+            <b></b>
+            <a href="#">登录页面，调查问卷</a>
+        </header>
+        <div class="ps">
+            <p>依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版<a href="#">《京东隐私政策》</a>已上线，将更有利于保护您的个人隐私。</p>
+        </div>
+    </div>
+    <!-- main -->
+    <div class="section_wrap">
+        <section>
+            <img src="../images/bg1.jpg" alt="">
+            <!-- 登录验证表单 -->
+            <form action="##">
+                <div class="tip">
+                    <p>京东不会以任何理由要求您转账汇款，谨防诈骗。</p>
+                </div>
+                <div class="method">
+                    <a href="#">账户登录</a>
+                    <!-- <p></p> -->
+                    <a href="#">扫码登陆</a>
+                </div>
+                <div class="die">
+                    <div class="put">
+                        <div class="put_t">
+                            <p></p>
+                            <input type="text" id="user" placeholder="邮箱/用户名/登录手机">
+                        </div>
+                        <div class="put_p">
+                            <p></p>
+                            <input type="password" id="psw" placeholder="密码">
+
+                        </div>
+                        <span><a href="#" >忘记密码</a></span>
+                        <button class="btn">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                    </div>
+
+                    <div class="dl" style="display:none">
+                        <img class="i1" src="../images/dlm.jpg" alt="">
+                        <img class="i2" src="../images/dlm2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="bot">
+                    <div class="bot_ri">
+                        <p>立即注册</p>
+                    </div>
+
+                </div>
+
+
+            </form>
+        </section>
+    </div>
+    <!-- footer -->
+    <div class="footer_wrap">
+        <footer>
+            <div class="link">
+                <a rel="nofollow" target="_blank" href="//about.jd.com/">
+                    关于我们
+                </a> |
+                <a rel="nofollow" target="_blank" href="//www.jd.com/contact/">
+                    联系我们
+                </a> |
+                <a rel="nofollow" target="_blank" href="//zhaopin.jd.com/">
+                    人才招聘
+                </a> |
+                <a rel="nofollow" target="_blank" href="//lai.jd.com/">
+                    商家入驻
+                </a> |
+                <a rel="nofollow" target="_blank" href="//jzt.jd.com/">
+                    广告服务
+                </a> |
+                <a rel="nofollow" target="_blank" href="//app.jd.com/">
+                    手机京东
+                </a> |
+                <a target="_blank" href="//club.jd.com/links.aspx">
+                    友情链接
+                </a> |
+                <a target="_blank" href="//media.jd.com/">
+                    销售联盟
+                </a> |
+                <a href="//pro.jd.com/mall/active/3WA2zN8wkwc9fL9TxAJXHh5Nj79u/index.html" target="_blank">
+                    京东社区
+                </a> |
+                <a href="//gongyi.jd.com" target="_blank">
+                    京东公益
+                </a> |
+                <a target="_blank" href="//www.joybuy.com/" clstag="pageclick|keycount|20150112ABD|9">English Site</a>
+            </div>
+            <div class="copy">
+                Copyright&nbsp;©&nbsp;2004-2020&nbsp;&nbsp;京东JD.com&nbsp;版权所有
+            </div>
+        </footer>
+    </div>
+
+    <script src="../jscd/login.js"></script>
+</body>
+
+</html>
